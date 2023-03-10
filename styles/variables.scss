@@ -1,0 +1,77 @@
+/* Screen sizes */
+$xxs-screen: 320px;
+$xs-screen: 576px;
+$s-screen: 1359.98px;
+$m-screen: 992px;
+$l-screen: 1200px;
+$xl-screen: 1400px;
+$mobile: 1359.98px;
+
+$default-center: 9.17%;
+$full-content-desktop: 1568px;
+$half-content-desktop: $full-content-desktop / 2;
+$full-content-mobile: 900px;
+$half-content-mobile: $full-content-mobile / 2;
+$mobile-min-center: 1rem;
+
+/* Typography */
+$platform-main-font-style: "Inter", sans-serif;
+
+$font-base: 10;
+$font-size-min: 5;
+$font-size-max: 20;
+$font-width-min: $xxs-screen / 1px;
+$font-width-max: $xl-screen / 1px;
+
+/* Real Colors */
+$platform-yellow: #f0bc44;
+$platform-green: #2b664a;
+$platform-dark-green: rgba(0, 71, 60, 1);
+$platform-peach: rgba(242, 239, 231, 1);
+$platform-violet: #6c2a5b;
+$platform-black: rgba(32, 32, 32, 1);
+$platform-white: white;
+$platform-blue: #203e70;
+$platform-red: #7C232E;
+$platform-grey: rgba(0, 0, 0, 0.2);
+$platform-mustard: rgba(129, 49, 0, 1);
+$platform-pink: rgba(108, 42, 91, 0.15);
+$modal-grey: rgba(57, 57, 57, 1);
+$popup-shadow: #00000090;
+$link-blue: #2196f3;
+$input-grey: rgba(128, 128, 128, 1);
+$purchase-price: rgba(247, 165, 64, 1);
+
+$platform-background-blueish: rgba(211, 212, 213, 1);
+$platform-background-greenish: rgba(206, 214, 205, 1);
+$card-content-green: rgba(0, 71, 60, 1);
+$card-background-green: rgba(206, 214, 205, 1);
+$card-content-blue: rgba(32, 62, 112, 1);
+$card-background-blue: rgba(211, 212, 213, 1);
+$card-content-brown: rgba(88, 41, 49, 1);
+$card-background-brown: rgba(219, 209, 204, 1);
+$card-content-red: rgba(124, 35, 46, 1);
+$card-background-red: rgba(224, 208, 203, 1);
+$card-content-purple: rgba(108, 42, 91, 1);
+$card-background-purple: rgba(222, 209, 210, 1);
+$card-content-teal: rgba(0, 78, 89, 1);
+$card-background-teal: rgba(206, 215, 210, 1);
+$card-content-mustard: rgba(129, 49, 0, 1);
+$card-background-mustard: rgba(225, 211, 196, 1);
+
+/* Semantic colors */
+$button-color: $platform-yellow;
+$platform-main-background-color: $platform-peach;
+$platform-alt-background-color: $platform-black;
+$platform-main-line-color: $platform-black;
+$platform-main-text-color: $platform-black;
+$platform-alt-line-color: $platform-peach;
+$platform-alt-text-color: $platform-peach;
+$button-shade-color: $platform-grey;
+$card-discount: $platform-yellow;
+$review-background-color: $platform-white;
+
+$quiz-red: $platform-red;
+$live: $platform-green;
+$input-error: $platform-mustard;
+$input-success: $platform-dark-green;

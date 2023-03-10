@@ -37,11 +37,6 @@ const App = () => {
 
       <div>
         <InstructorsFull />
-        {/* <InstructorsFull
-          photo="/KharchenkoMax.jpg"
-          name="Евгения"
-          lastName="Харченко"
-        /> */}
       </div>
     </>
   );
