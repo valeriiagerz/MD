@@ -124,3 +124,11 @@
   height: 1.25rem;
   width: 1.25rem;
 }
+
+.green-border {
+  border: 2px solid $platform-green;
+}
+
+.blue-border {
+  border: 2px solid $platform-blue;
+}

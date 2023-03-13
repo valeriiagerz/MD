@@ -1,4 +1,4 @@
-import s from "./platform_banner.module.css";
+import s from "./platform_banner.module.scss";
 
 export default function PlatformBanner() {
   return (
@@ -12,7 +12,7 @@ export default function PlatformBanner() {
             <br />
             медицины
           </h2> 
-          <p className={s["p"]}>
+          <p>
             Наша главная миссия - это качественное биомедицинское образование
             международного уровня, которое доступно каждому. По мнению более
             5000 наших учеников - мы делаем больше, чем образование! <br />

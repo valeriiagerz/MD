@@ -1,0 +1,39 @@
+@import "./styles/variables";
+
+.input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.input:checked ~ .checkmark {
+  background-color: $platform-yellow;
+  background-image: url(../../public/logos/checkbox_done.svg);
+  border: 2px solid $platform-black;
+}
+
+.checkmark:active {
+  background-color: $platform-yellow;
+  background-image: url(../../public/logos/checkbox_done.svg);
+  border: 2px solid $platform-black;
+}
+
+.input:checked ~ .checkmark:after {
+  display: unset;
+}
+
+.checkmark {
+  position: relative;
+  background-color: $platform-white;
+  border: 2px solid $platform-black;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  // background-image: url(../../public/images/vectors/checkbox_done.svg);
+}
+
+.checkmark:hover {
+  border: 3px solid $platform-black;
+}

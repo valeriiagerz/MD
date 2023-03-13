@@ -23,14 +23,9 @@ export default function Header() {
             <Link href="/">
               <h6 className={`${s["link-wrapper"]} ${"small"}`}>Главная</h6>
             </Link>
-            <Link href="#">
+            <Link href="/teachers">
               <h6 className={`${s["link-wrapper"]} ${"small"}`}>
-                Все&nbsp;курсы
-              </h6>
-            </Link>
-            <Link href="#">
-              <h6 className={`${s["link-wrapper"]} ${"small"}`}>
-                MD&nbsp;club
+                Преподаватели
               </h6>
             </Link>
           </div>

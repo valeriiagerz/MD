@@ -2,9 +2,7 @@ import s from "./instructors.module.scss";
 import Link from "next/link";
 import Button from "./button";
 import InstructorsMiniCard from "./instructors_mini_card";
-// import { useState } from "react";
-// import { fetcher } from "@/lib/fetcher";
-// import InstructorCarousel from "./instructors_carousel";
+import { InstructorsData } from "@/instructors_data";
 
 export default function Instructors() {
 
@@ -17,9 +15,10 @@ export default function Instructors() {
           <p>Харизматичные лекторы, которые помогут вам в изучении медицины</p>
         </div>
         <div className={s["right"]}>
-          <InstructorsMiniCard /> 
-          <InstructorsMiniCard /> 
-          <InstructorsMiniCard />
+        {InstructorsData &&
+          InstructorsData.slice(0, 3).map((instructor, i) => (
+            <InstructorsMiniCard key={i} p={instructor} />
+          ))}
           <Link href="/teachers">
             <div className={s["button"]}>
               <Button text="Все преподаватели" arrow="/arrow.svg" />

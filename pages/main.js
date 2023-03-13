@@ -1,20 +1,18 @@
-import './globals.scss'
-import PlatformBanner from "../../components/platform_banner";
-import Instructors from "../../components/instructors";
+import "../src/app/globals.scss";
+import PlatformBanner from "../components/platform_banner";
+import Instructors from "../components/instructors";
 import Head from "next/head";
-import InstructorsFull from "../../components/instructors_full";
-import Header from "../../components/header";
-import Main from '../../pages/main';
-import Footer from '../../components/footer';
+import Header from "../components/header";
+import Footer from "../components/footer";
 
-const App = () => {
+export default function Main() {
   return (
     <>
       <Head>
         <link
           rel="noopener noreferrer icon"
           type="image/ico"
-          href="logo.ico"
+          href="/logos/logo.ico"
         />
         <link
           rel="noopener noreferrer preconnect"
@@ -30,9 +28,13 @@ const App = () => {
           rel="noopener noreferrer stylesheet"
         />
       </Head>
-      <Main />
+      <Header />
+      <div>
+        <PlatformBanner />
+      </div> <br />
+        <Instructors />
+      <div className={["border"]}></div>
+        <Footer />
     </>
   );
 };
-
-export default App;

@@ -1,3 +1,5 @@
+@import "./styles/variables";
+
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +34,11 @@ li {
   color: rgba(32, 32, 32, 1);
 }
 
+small,
+.small {
+  font-size: 18px;
+}
+
 h1 {
   font-size: 80px;
 }
@@ -50,7 +57,12 @@ h5 {
 
 p {
   font-size: 23px;
-  margin-top: 32px;
+  font-family: "Inter";
+  left: 19px;
+  top: 269px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
 }
 
 a {
@@ -67,3 +79,9 @@ a {
   padding: 0 9.17%;
 }
 
+.border {
+  margin-top: 100px;
+  height: 0.1rem;
+  width: 100%;
+  background-color: $platform-main-line-color;
+}

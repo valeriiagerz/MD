@@ -8,10 +8,11 @@ export const Button = React.forwardRef(function (p) {
   const buttonTextColor = p.text_color
     ? s[p.text_color + "-text"]
     : s["black-text"];
-    const shadowClass = p.shadow ? s["shadow-" + p.shadow] : s["shadow-black"];
+  const shadowClass = p.shadow ? s["shadow-" + p.shadow] : s["shadow-black"];
+  const solidBorder = p.border_color && s[p.border_color + "-border"];
   return (
     <button
-      className={`${s["platform-button"]} ${buttonColorClass} ${buttonTextColor}`}
+      className={`${s["platform-button"]} ${solidBorder} ${buttonColorClass} ${buttonTextColor}`}
       text={p.text}
       // logo={p.arrow}
     >
@@ -21,7 +22,11 @@ export const Button = React.forwardRef(function (p) {
           src={"/logos/" + p.inner_logo}
         />
       )}
-      {p.text && <span className={`${s["platform-button-text"]} ${buttonTextColor}`}>{p.text}</span>}
+      {p.text && (
+        <span className={`${s["platform-button-text"]} ${buttonTextColor}`}>
+          {p.text}
+        </span>
+      )}
       {p.arrow && (
         <img className={`${buttonTextColor}`} src={"/logos/" + p.arrow} />
       )}

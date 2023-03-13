@@ -1,0 +1,76 @@
+@import "../styles/variables";
+
+.padding {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.wrapper {
+  display: flex;
+  border-top: 2px solid $platform-main-line-color;
+}
+
+.call-to-action {
+  margin-top: 3.125rem;
+  margin-right: 3rem;
+  & > p {
+    margin-top: 1rem;
+  }
+}
+
+.contact-form-wrapper {
+  position: relative;
+  flex: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2rem;
+    border-right: 2px solid $platform-main-line-color;
+  }
+}
+
+.contact-form {
+  padding-left: 3rem;
+  padding-top: 3.125rem;
+  & > p {
+    margin-top: 1rem;
+  }
+}
+
+.contact-phone-wrapper {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.contact-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.buttons {
+  display: flex;
+  & > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+.input-wrapper {
+  // display: flex;
+  width: 100%;
+  max-width: 22.5rem;
+  margin-right: 1rem;
+  > *:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+.mark {
+  background-color: unset;
+  text-decoration: underline;
+}
+
+.agree {
+  font-size: 16px;
+}

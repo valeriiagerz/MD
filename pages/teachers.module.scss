@@ -1,0 +1,35 @@
+@import "../styles/variables.scss";
+
+.end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10rem;
+  h3 {
+    margin-top: 2.5rem;
+  }
+  img {
+    max-width: 240px;
+  }
+  p {
+    margin-top: 1rem;
+    text-align: center;
+    max-width: 365px;
+    line-height: 160%;
+  }
+}
+
+.end-full {
+  margin-top: 2rem;
+  display: flex;
+  > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+// .border {
+//   margin-top: 100px;
+//   height: 0.1rem;
+//   width: 100%;
+//   background-color: $platform-main-line-color;
+// }
