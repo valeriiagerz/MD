@@ -1,0 +1,28 @@
+@import "../../styles/variables";
+
+.wrapper {
+  display: flex;
+  padding: 1rem 0;
+  border-bottom: 2px solid $platform-main-line-color;
+  margin-bottom: 60px;
+}
+
+.link-tree {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 0;
+  margin-left: 2rem;
+  > *:not(:last-child) {
+    margin-right: 0.75rem;
+  }
+  > *:nth-last-child(-n+2) {
+    opacity: 50%;
+  }
+}
+
+.link {
+  cursor: pointer;
+  font-weight: bold;
+}

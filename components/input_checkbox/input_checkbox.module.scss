@@ -12,15 +12,11 @@
   border: 2px solid $platform-black;
 }
 
-.checkmark:active {
-  background-color: $platform-yellow;
-  background-image: url(../../public/logos/checkbox_done.svg);
-  border: 2px solid $platform-black;
-}
-
-.input:checked ~ .checkmark:after {
-  display: unset;
-}
+// .checkmark:active {
+//   background-color: $platform-yellow;
+//   background-image: url(../../public/logos/checkbox_done.svg);
+//   border: 2px solid $platform-black;
+// }
 
 .checkmark {
   position: relative;

@@ -1,0 +1,53 @@
+@import "@/styles/variables.scss";
+
+.social-logo {
+  position: relative;
+  display: inline-block;
+  transition: all 0.25s ease-out;
+  cursor: pointer;
+}
+
+.social-logo-border {
+  @extend .social-logo;
+  position: relative;
+  padding: 0.875rem 1rem;
+  border-bottom: 2px solid $platform-main-line-color;
+  &::before, &::after {
+    content: "";
+    height: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-right: 2px solid $platform-main-line-color;
+  }
+  &::after {
+    right: 0;
+  }
+  & > img {
+    position: relative;
+    transition: all 0.2s;
+    top: 0rem;
+  }
+  &:hover img {
+    top: 0.25rem;
+  }
+}
+
+.active {
+  img {
+    top: -0.5rem;
+  }
+  .circle {
+    opacity: 100;
+  }
+}
+
+.circle {
+  position: absolute;
+  opacity: 0;
+  left: calc(50% - 3px);
+  width: 6px;
+  height: 6px;
+  background-color: rgba(32, 32, 32, 1);
+  border-radius: 50%;
+}

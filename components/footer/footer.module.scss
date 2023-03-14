@@ -1,0 +1,133 @@
+@import "../../styles/variables.scss";
+
+.platform-block-white {
+  background-color: $platform-white;
+}
+
+.footer-wrapper {
+  padding-top: 5rem;
+  // margin-top: 5rem;
+  // border-top: 2px solid $platform-main-line-color;
+}
+
+.footer-top {
+  & > p {
+    margin-top: 1rem;
+    max-width: 32.375rem;
+  }
+}
+
+.footer-mid {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+}
+
+.footer-mid-left {
+  display: flex;
+  flex-direction: column;
+  & > p {
+    margin-top: 1rem;
+  }
+}
+
+.footer-mid-right {
+  display: flex;
+  // flex-grow: 0.5;
+  flex-grow: 1;
+  // max-width: 47.9375rem;
+  // margin-left: auto;
+  justify-content: flex-end;
+  gap: 1rem 2rem;
+}
+
+.contact-email-wrapper {
+  display: flex;
+  align-items: flex-end;
+  & > div:last-child {
+    margin-top: 1rem;
+    // width: 100%;
+    margin-left: 1rem;
+    button {
+      width: 100%;
+    }
+  }
+}
+
+.info-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // width: calc(100% / 3);
+  // flex-basis: 234px;
+  width: 100%;
+  border-top: 2px solid $platform-main-line-color;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1rem;
+    border-right: 2px solid $platform-main-line-color;
+  }
+  &-block {
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    & > p:not(:first-child) {
+      cursor: pointer;
+    }
+  }
+  &-header {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  &-text {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  &-socials img{
+    max-width: 24px;
+  }
+  &-socials {
+    & > *:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+  &-socials:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5.875rem;
+  padding: 2.5rem 0;
+  border-top: 2px solid $platform-main-line-color;
+}
+
+.payment-systems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.confidentiality-politics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  // justify-content: space-between;
+  align-items: center;
+  column-gap: 1.8125rem;
+  // & > p:not(:last-child ) {
+  //   margin-right: 1.8125rem;
+  // }
+  a {
+    color: inherit;
+  }
+}
+
+.br-personal {
+  display: none;
+}
